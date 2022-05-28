@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prog_sep_2021.ShowArticlesController">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="1200.0">
+         <padding>
+            <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+         </padding>
+          <Text layoutX="231.0" layoutY="109.0" text="LISTADO DE ARTÍCULOS DE UN PROVEEDOR" wrappingWidth="738.0">
+            <font>
+               <Font name="System Italic" size="36.0" />
+            </font></Text>
+         <Text layoutX="207.0" layoutY="219.0" text="PROVEEDOR" wrappingWidth="130.0">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font>
+         </Text>
+         <ComboBox fx:id="cb_proveedores" layoutX="411.0" layoutY="200.0" prefHeight="25.0" prefWidth="394.0" />
+         <Button layoutX="886.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="LISTAR" onAction="#loadData"/>
+         <TableView layoutX="98.0" layoutY="353.0" prefHeight="354.0" prefWidth="994.0" fx:id="tableView">
+           <columns>
+             <TableColumn prefWidth="182.0" text="C.Barra" fx:id="cbarra" />
+             <TableColumn prefWidth="293.0" text="Denominación" fx:id="denominacion"/>
+               <TableColumn prefWidth="157.0" text="Unidades" fx:id="unidades"/>
+               <TableColumn prefWidth="204.0" text="P. Compra" fx:id="pcompra"/>
+               <TableColumn prefWidth="157.0" text="P.V.P" fx:id="pvp"/>
+           </columns>
+         </TableView>
+      </AnchorPane>
+   </children>
+</AnchorPane>
